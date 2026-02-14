@@ -1,8 +1,37 @@
 @import "tailwindcss";
 
+/* Color Variables from our color configuration */
 :root {
+  /* Brand Colors */
+  --color-logo-maroon: #800020;
+  --color-logo-maroon-light: #A0002C;
+  --color-logo-maroon-dark: #600018;
+
+  --color-business-dark-blue: #003366;
+  --color-business-dark-blue-light: #004080;
+  --color-business-dark-blue-dark: #002244;
+
+  /* Medical Theme Colors */
+  --color-medical-white: #FFFFFF;
+  --color-medical-light-gray: #F5F5F5;
+  --color-medical-medium-gray: #E0E0E0;
+  --color-medical-dark-gray: #4A4A4A;
+  --color-medical-accent: #0088CC;
+  --color-medical-accent-light: #E6F5FB;
+
+  /* Text Colors */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #666666;
+  --color-text-light: #999999;
+
+  /* Background Colors */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F8F9FA;
+  --color-bg-accent: #E6F5FB;
+
+  /* Default theme variables */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1A1A1A;
 }
 
 @theme inline {
@@ -12,15 +41,36 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Remove dark mode for professional medical website */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-medical-light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-business-dark-blue);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-logo-maroon);
 }
