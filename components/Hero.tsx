@@ -19,63 +19,107 @@ export default function Hero() {
           <div className="mb-8">
             <h2 className="text-5xl md:text-6xl font-bold mb-6"
                 style={{ color: colors.business.darkBlue }}>
-              Hospital Consumables & Diagnostic Kits
+              Our Mission
             </h2>
             <div className="w-24 h-1 mx-auto mb-6"
                  style={{ backgroundColor: colors.logo.maroon }} />
             <p className="text-xl md:text-2xl leading-relaxed"
                style={{ color: colors.text.secondary }}>
-              Specialised in supply of hospital consumables, diagnostic kits, surgical products with consistent availability and dependable fulfillment.
+              To deliver reliable, cost-effective, and advanced healthcare solutions that contribute to the well-being and longevity of individuals, fostering a healthier and happier society.
             </p>
           </div>
 
-          {/* Key Features */}
-          <div className="grid md:grid-cols-3 gap-8 mt-16">
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center"
-                   style={{ backgroundColor: colors.medical.accentLight }}>
-                <svg className="w-8 h-8" fill="none" stroke={colors.medical.accent} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2" style={{ color: colors.business.darkBlue }}>
-                Quality Assured
-              </h3>
-              <p style={{ color: colors.text.secondary }}>
-                Premium diagnostic equipment from trusted manufacturers
-              </p>
-            </div>
+          {/* Our Values */}
+<div className="mt-16">
+  <div className="text-center mb-12">
+    <h2
+      className="text-3xl font-bold mb-4"
+      style={{ color: colors.business.darkBlue }}
+    >
+      Our Values
+    </h2>
+    <div
+      className="w-24 h-1 mx-auto"
+      style={{ backgroundColor: colors.logo.maroon }}
+    />
+  </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center"
-                   style={{ backgroundColor: colors.medical.accentLight }}>
-                <svg className="w-8 h-8" fill="none" stroke={colors.medical.accent} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2" style={{ color: colors.business.darkBlue }}>
-                Expert Support
-              </h3>
-              <p style={{ color: colors.text.secondary }}>
-                Technical expertise and dedicated customer service
-              </p>
-            </div>
+  <div className="grid md:grid-cols-2 gap-8">
+    
+    {/* Integrity */}
+    <div className="bg-white p-6 rounded-lg shadow-md">
+      <h3
+        className="text-xl font-semibold mb-3"
+        style={{ color: colors.business.darkBlue }}
+      >
+        Integrity
+      </h3>
+      <p style={{ color: colors.text.secondary }}>
+        Upholding the highest ethical standards in all our operations and 
+        interactions, ensuring transparency and honesty in every aspect of our business.
+      </p>
+    </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center"
-                   style={{ backgroundColor: colors.medical.accentLight }}>
-                <svg className="w-8 h-8" fill="none" stroke={colors.medical.accent} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2" style={{ color: colors.business.darkBlue }}>
-                Nationwide Network
-              </h3>
-              <p style={{ color: colors.text.secondary }}>
-                Authorized distributors across the country
-              </p>
-            </div>
-          </div>
+    {/* Innovation */}
+    <div className="bg-white p-6 rounded-lg shadow-md">
+      <h3
+        className="text-xl font-semibold mb-3"
+        style={{ color: colors.business.darkBlue }}
+      >
+        Innovation
+      </h3>
+      <p style={{ color: colors.text.secondary }}>
+        Constantly pursuing new technologies and methodologies to improve 
+        the efficacy of our products and services, pushing the boundaries of healthcare.
+      </p>
+    </div>
+
+    {/* Customer-Centric Approach */}
+    <div className="bg-white p-6 rounded-lg shadow-md">
+      <h3
+        className="text-xl font-semibold mb-3"
+        style={{ color: colors.business.darkBlue }}
+      >
+        Customer-Centric Approach
+      </h3>
+      <p style={{ color: colors.text.secondary }}>
+        Placing our clients at the centre of our operations, striving to 
+        understand and fulfil their needs with dedication and care.
+      </p>
+    </div>
+
+    {/* Excellence */}
+    <div className="bg-white p-6 rounded-lg shadow-md">
+      <h3
+        className="text-xl font-semibold mb-3"
+        style={{ color: colors.business.darkBlue }}
+      >
+        Excellence
+      </h3>
+      <p style={{ color: colors.text.secondary }}>
+        Striving for excellence in customer service to maintain the 
+        highest quality standards in everything we do.
+      </p>
+    </div>
+
+    {/* Products & Services */}
+    <div className="bg-white p-6 rounded-lg shadow-md md:col-span-2">
+      <h3
+        className="text-xl font-semibold mb-3"
+        style={{ color: colors.business.darkBlue }}
+      >
+        Products & Services
+      </h3>
+      <p style={{ color: colors.text.secondary }}>
+        <strong>Medical Devices:</strong> Providing cutting-edge 
+        medical devices, catering to the needs of hospitals 
+        and healthcare professionals.
+      </p>
+    </div>
+
+  </div>
+</div>
+
         </div>
       </div>
     </section>

@@ -103,9 +103,6 @@ export default function Footer() {
           <p className="text-gray-300">
             &copy; {currentYear} Nidhi Life Care. All rights reserved.
           </p>
-          <p className="text-gray-400 text-sm mt-2">
-            Specialized in Diagnostic Equipment Solutions
-          </p>
         </div>
       </div>
     </footer>

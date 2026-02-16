@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Nidhi Life Care - G. S. Kamath",
-  description: "Specialized in diagnostic equipment trading. Providing cutting-edge diagnostic solutions and equipment to healthcare professionals across India.",
+  description: "To be recognized as a leading healthcare service provider, setting benchmarks for excellence and innovation in the industry while positively impacting communities through our products and unmatched services.",
 };
 
 export default function RootLayout({

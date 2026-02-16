@@ -19,7 +19,10 @@ const defaultDistributors: Distributor[] = [
     name: "Sun Technosolutions India Ltd."
   },
   {
-    name: "Entrust Data Cards/Force ID"
+    name: "Entrust"
+  },
+  {
+    name: "Force ID"
   },
   {
     name: "Hemant Surgical Industries Ltd"
@@ -39,9 +42,6 @@ export default function Distributors({ distributors = defaultDistributors }: Dis
             </h2>
             <div className="w-24 h-1 mx-auto mb-4"
                  style={{ backgroundColor: colors.logo.maroon }} />
-            <p className="text-lg" style={{ color: colors.text.secondary }}>
-              Our trusted partners across India
-            </p>
           </div>
 
           {/* Distributors Grid */}
@@ -73,24 +73,6 @@ export default function Distributors({ distributors = defaultDistributors }: Dis
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Call to Action */}
-          <div className="mt-16 text-center bg-white p-8 rounded-lg shadow-md">
-            <h3 className="text-2xl font-bold mb-4"
-                style={{ color: colors.business.darkBlue }}>
-              Interested in Becoming a Distributor?
-            </h3>
-            <p className="text-lg mb-6" style={{ color: colors.text.secondary }}>
-              Join our network of authorized distributors and bring quality diagnostic equipment to your region
-            </p>
-            <a
-              href="#contact"
-              className="inline-block px-8 py-3 rounded-lg font-semibold text-white transition-opacity hover:opacity-90"
-              style={{ backgroundColor: colors.logo.maroon }}
-            >
-              Contact Us
-            </a>
           </div>
         </div>
       </div>
